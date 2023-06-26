@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+    <h1>Facturas Estacionamiento</h1>
+    <h2>Favor de contestar el siguiente formulario</h2>
+  <form id="myForm">
+    <label for="rfc">Registro federal de causantes:</label>
+    <input type="text" id="rfc" maxlength="13" required>
+
+    <label for="email">Correo electrónico en el que deseas que recibir tu factura:</label>
+    <input type="email" id="email" required>
+    
+    <label>¿Ya has facturado con nosotros?</label>
+<div class="radio-container">
+  <input type="radio" id="question1-yes" name="question1" value="yes" required>
+  <label for="question1-yes">Sí</label>
+  <input type="radio" id="question1-no" name="question1" value="no">
+  <label for="question1-no">No</label>
+</div>
+
+    <label for="question2">Nombre de la empresa *</label>
+    <input type="text" id="question2" required>
+
+    <label for="postalCode">Código Postal:</label>
+    <input type="text" id="postalCode" maxlength="5" required>
+    
+    <label for="question3">Pregunta 3:</label>
+    <input type="text" id="question3" required>
+    
+    <label for="question4">Pregunta 4:</label>
+    <input type="text" id="question4">
+    
+    <label for="question5">Pregunta 5:</label>
+    <input type="text" id="question5">
+    
+    <input type="submit" value="Enviar">
+  </form>
+</div>
+  <script src="script.js"></script>
+</body>
+</html>
